@@ -3,7 +3,7 @@ import "./ExpenseForm.css"
 
 const ExpenseForm = (props) => {
 
-    // const [enteredTitle, setEnteredTitle] = useState('');
+    //const [enteredTitle, setEnteredTitle] = useState('');
     // const [enteredAmount, setEnteredAmount] = useState('');
     // const [enteredDate, setEnteredDate] = useState('');
     const [userInput, setUserInput] = useState({
@@ -14,6 +14,7 @@ const ExpenseForm = (props) => {
 
     const titleChangeHandler = (event) => {
         //setEnteredTitle(event.target.value)
+
         setUserInput({
             ...userInput,
             enteredTitle: event.target.value
